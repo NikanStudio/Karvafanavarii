@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="کنفرانس کلاس ۷,۱ درباره طراحی سایت، برنامه‌نویسی، پایتون، اسکرچ و سئو.">
+<meta name="robots" content="index, follow">
+<title>کلاس ۷,۱</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Tahoma,Arial,sans-serif;
+ background:#0b1020;
+ color:#f1f5f9;
+ line-height:2;
+}
+a{color:inherit;text-decoration:none}
+header{
+ min-height:230px;padding:40px 15px;
+ text-align:center;display:flex;
+ flex-direction:column;align-items:center;justify-content:center;
+ background:radial-gradient(ellipse at top,#3730a3,#111827 75%);
+ border-bottom:1px solid #343c5b;
+}
+.class-name{font-size:clamp(38px,8vw,64px);font-weight:900}
+header p{color:#c7d2fe;margin:8px 0}
+nav{
+ position:sticky;top:0;z-index:10;
+ display:flex;justify-content:center;gap:5px;flex-wrap:wrap;
+ padding:10px 5px;background:#111827ee;
+ backdrop-filter:blur(12px);border-bottom:1px solid #30384d;
+}
+nav a{padding:5px 10px;border-radius:9px;font-size:13px;color:#e0e7ff}
+nav a:hover{background:#4f46e5}
+main{width:min(100% - 28px,1000px);margin:auto}
+.intro{text-align:center;padding:32px 8px 18px}
+h2{font-size:25px;color:#a5b4fc;margin-top:0}
+h3{font-size:19px;color:#c4b5fd}
+p{color:#cbd5e1}
+.card{
+ background:linear-gradient(145deg,#161e32,#111827);
+ border:1px solid #303951;border-radius:20px;
+ padding:22px;margin:20px 0;overflow:hidden;
+ box-shadow:0 12px 35px #0002;
+}
+.card img{
+ display:block;width:100%;max-height:330px;
+ object-fit:contain;background:#fff;
+ border-radius:12px;margin:15px auto;
+}
+.tag{display:inline-block;background:#312e81;color:#ddd6fe;
+ padding:3px 12px;border-radius:30px;font-size:12px}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));
+ gap:14px;
+}
+.mini{border:1px solid #343d55;padding:17px;border-radius:14px;background:#151d30}
+.mini h3{margin-top:0}
+ul{padding-right:23px;color:#cbd5e1}
+li{margin:7px 0}
+.note{padding:13px;background:#172554;border-right:4px solid #818cf8;
+ border-radius:9px;color:#e0e7ff}
+.code{
+ direction:ltr;text-align:left;overflow:auto;
+ background:#080d18;color:#86efac;padding:15px;
+ border-radius:12px;font-size:13px;
+}
+footer{
+ text-align:center;padding:25px 15px;margin-top:40px;
+ background:#111827;border-top:1px solid #30384d;color:#94a3b8;
+}
+.small{font-size:13px;color:#94a3b8}
+section{scroll-margin-top:85px}
+@media(max-width:500px){
+ header{min-height:190px;padding:25px 12px}
+ .card{padding:16px;border-radius:15px}
+ h2{font-size:22px}
+ nav{gap:2px;padding:8px 3px}
+ nav a{font-size:11px;padding:5px 6px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="class-name">کلاس ۷,۱</div>
+ <p>آشنایی با دنیای برنامه‌نویسی و طراحی وب</p>
+</header>
+
+<nav aria-label="فهرست مطالب">
+ <a href="#book">مطالب کتاب</a>
+ <a href="#web">طراحی سایت</a>
+ <a href="#mobile">موبایل</a>
+ <a href="#python">پایتون</a>
+ <a href="#seo">سئو</a>
+ <a href="#scratch">اسکرچ</a>
+</nav>
+
+<main>
+
+<div class="intro">
+ <span class="tag">کنفرانس آموزشی</span>
+ <h2>درس برنامه نویسی ، کار و فناوری 💻</h2>
+ <p>
+ در این صفحه با برنامه‌نویسی، طراحی وب‌سایت،
+ طراحی سایت با موبایل، پایتون و سئو آشنا می‌شویم.
+ </p>
+</div>
+
+<section id="book" class="card">
+ <h2>📚 آشنایی با مطالب کتاب</h2>
+ <p>
+ فناوری اطلاعات و رایانه یا همون کامپیوتر در زندگی امروز کاربرد زیادی دارند.
+ با یادگیری مهارت‌های دیجیتالی می‌تونیم اطلاعات را سازمان‌دهی کنیم،
+ مسئله‌ها را حل کنیم و ایده‌های خودمون را به پروژه‌های کاربردی تبدیل کنیم.
+ </p>
+ <div class="grid">
+  <div class="mini">
+   <h3>الگوریتم</h3>
+   <p>الگوریتم مجموعه‌ای از مراحل مشخص و مرتب برای حل یک مسئله است.</p>
+  </div>
+  <div class="mini">
+   <h3>برنامه‌نویسی</h3>
+   <p>برنامه‌نویسی یعنی نوشتن دستورهایی که رایانه ( کامپیوتر )بتواند آن‌ها را اجرا کند.</p>
+  </div>
+  <div class="mini">
+   <h3>حل مسئله</h3>
+   <p>برای حل مسئله، آن را بررسی می‌کنیم و راه‌حل را مرحله‌به‌مرحله اجرا می‌کنیم.</p>
+  </div>
+ </div>
+ <p class="note">
+ مهم:
+   میشود سایت رو با کمک هوش مصنوعی ساخت ، ولی پیشنهاد نمیکنم
+ </p>
+</section>
+
+<section id="web" class="card">
+ <h2>🌐 طراحی وب‌سایت چیست؟</h2>
+ <p>
+ طراحی وب‌سایت فرایند ساخت صفحات اینترنتی است.
+ سایت‌ها برای آموزش، معرفی کسب‌وکار، انتشار اخبار و سرگرمی ساخته می‌شوند.
+   ( بعضی از سایت ها مخرب هستند و نباید وارد شویم)
+ </p>
+ <h3>سه فناوری مهم در طراحی سایت</h3>
+ <div class="grid">
+  <div class="mini">
+   <h3>HTML</h3>
+   <p>ساختار صفحه را مشخص می‌کند؛ مانند عنوان، متن، تصویر و پیوند.</p>
+  </div>
+  <div class="mini">
+   <h3>CSS</h3>
+   <p>ظاهر سایت را طراحی می‌کند؛ مانند رنگ، اندازه و چیدمان.</p>
+  </div>
+  <div class="mini">
+   <h3>JavaScript</h3>
+   <p>امکان افزودن تعامل و رفتارهای پویا را فراهم می‌کند.</p>
+  </div>
+ </div>
+ <h3>مثال ساده HTML</h3>
+ <pre class="code"><code>&lt;h1&gt;سلام دنیا!&lt;/h1&gt;
+&lt;p&gt;این اولین صفحه من است.&lt;/p&gt;</code></pre>
+ <p>تگ h1 یک عنوان و تگ p یک پاراگراف ایجاد می‌کند.</p>
+</section>
+
+<section id="mobile" class="card">
+ <h2>📱 طراحی سایت با موبایل</h2>
+ <p>
+ برای طراحی سایت حتماً به کامپیوتر نیاز نداریم. با گوشی هوشمند
+ و یک ویرایشگر کد می‌توانیم فایل‌های سایت را بسازیم،
+ کدها را تغییر دهیم و نتیجه را در مرورگر بررسی کنیم.
+ </p>
+ <h3>مراحل ساخت سایت با گوشی</h3>
+ <ul>
+  <li>استفاده از یک ویرایشگر کد مانند Acode.</li>
+  <li>ساخت فایل index.html برای محتوای صفحه.</li>
+  <li>نوشتن HTML و CSS و در صورت نیاز JavaScript.</li>
+  <li>اجرای صفحه در مرورگر و بررسی خطاها.</li>
+  <li>انتشار سایت با یک سرویس میزبانی مناسب مانند گیت هاب
+    ( این سایت با موبایل ساخته شده است).</li>
+ </ul>
+ <h3>طراحی واکنش‌گرا (Responsive Design)</h3>
+ <p>
+ سایت واکنش‌گرا با اندازه‌های مختلف صفحه سازگار می‌شود.
+ متن‌ها باید خوانا باشند، تصاویر از صفحه بیرون نزنند
+ و دکمه‌ها به‌آسانی قابل لمس باشند.
+ </p>
+ <pre class="code"><code>img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+}</code></pre>
+</section>
+
+<section id="python" class="card">
+ <h2>🐍 زبان برنامه‌نویسی پایتون</h2>
+ <p>
+ پایتون یک زبان برنامه‌نویسی پرکاربرد با ساختاری نسبتاً ساده و خواناست.
+ از آن در آموزش، تحلیل داده، خودکارسازی کارها و ساخت برنامه‌ها استفاده می‌شود.
+ </p>
+ <img
+ src="https://blog.faradars.org/wp-content/uploads/2018/10/bright-illustration-of-python-code-execution-with-logo.jpg"
+ alt="تصویر آموزشی اجرای کد پایتون"
+ loading="lazy">
+ <h3>یک مثال ساده</h3>
+ <pre class="code"><code>name = "Nikan"
+print("Hello", name)
+
+a = 5
+b = 3
+print(a + b)</code></pre>
+ <p>
+ دستور print برای نمایش خروجی است. این برنامه نام را نمایش می‌دهد
+ و سپس حاصل جمع دو عدد را چاپ می‌کند.
+ </p>
+ <p class="note">
+ پایتون برای شروع یادگیری برنامه‌نویسی مناسب است؛
+ طراحی ظاهر صفحات وب معمولاً با HTML و CSS انجام می‌شود.
+ </p>
+</section>
+
+<section id="seo" class="card">
+ <h2>🔎 سئو یا SEO چیست؟</h2>
+ <p>
+ SEO کوتاه‌شده عبارت Search Engine Optimization است؛
+ یعنی بهینه‌سازی برای موتورهای جست‌وجو.
+ سئو به موتورهای جست‌وجو کمک می‌کند محتوای سایت را بهتر درک کنند
+ و می‌تواند شانس دیده‌شدن صفحات را افزایش دهد.
+ </p>
+ <img
+ src="https://3sotweb.com/wp-content/uploads/2018/11/%D8%B3%D8%A6%D9%88.jpg"
+ alt="تصویر آموزشی سئو سایت"
+ loading="lazy">
+ <h3>نکات مهم برای سئو</h3>
+ <ul>
+  <li><b>عنوان مناسب:</b> برای هر صفحه عنوانی روشن و مرتبط بنویسیم.</li>
+  <li><b>محتوای مفید:</b> اطلاعات دقیق و کاربردی ارائه کنیم.</li>
+  <li><b>توضیحات متا:</b> خلاصه‌ای از محتوای صفحه مشخص کنیم.</li>
+  <li><b>سازگاری با موبایل:</b> صفحه در گوشی به‌درستی نمایش داده شود.</li>
+  <li><b>سرعت مناسب:</b> تصاویر و کدها را بهینه کنیم.</li>
+  <li><b>پیوندهای مناسب:</b> دسترسی به صفحات مهم را آسان کنیم.</li>
+ </ul>
+ <h3>نمونه عنوان و توضیحات صفحه</h3>
+ <pre class="code"><code>&lt;title&gt;آموزش طراحی سایت&lt;/title&gt;
+&lt;meta name="description"
+content="آشنایی با HTML، CSS و طراحی وب"&gt;</code></pre>
+ <p>
+ رعایت اصول سئو تضمین نمی‌کند که سایت رتبه اول را بگیرد؛
+ اما می‌تواند به درک بهتر محتوا و افزایش شانس دیده‌شدن کمک کند.
+ </p>
+</section>
+
+<section id="scratch" class="card">
+ <h2>🎨 اسکرچ (Scratch)</h2>
+
+ <img
+ src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4z70940YrJoqj2xt2KlmxEnu2YYqdrhWUjE5lLk9dv6fwSRXlqTDvzmM&s=10"
+ alt="تصویر اسکرچ"
+ loading="lazy">
+
+ <h3>مقاله اسکرچ</h3>
+
+ <!-- نیکان: مقاله اسکرچ را در قسمت زیر بنویس -->
+
+ <p>
+ اسکرچ یک زبان برنامه نویسی مخصوص کودکان و نوجوانان
+   که علاقه به یادگیری کدنویسی دارن هستش
+   برای یادگیری سروع خوبی هستش
+   ولی در بازی سازی تاثیر زیادی نداره
+   بهترین بازی هایی که از طریق اسکرچ میشه ساخت ، بازی های داستان محور هستند
+ </p>
+
+ <!-- مقاله را می‌توان با چند پاراگراف، عنوان یا فهرست جایگزین کرد -->
+
+</section>
+
+<section class="card">
+ <h2>✅ جمع‌بندی</h2>
+ <p>
+ برنامه‌نویسی به ما کمک می‌کند ایده‌های خود را به برنامه‌های کاربردی
+ تبدیل کنیم. با HTML و CSS می‌توانیم وب‌سایت بسازیم،
+ با موبایل آن را ویرایش کنیم، با پایتون برنامه بنویسیم
+ و با اصول سئو به بهتر دیده‌شدن محتوا کمک کنیم.
+ </p>
+ <p>
+ مهم‌ترین قدم برای یادگیری، تمرین و ساخت پروژه‌های کوچک است؛
+ زیرا با تجربه عملی، مفاهیم بهتر درک می‌شوند.
+ </p>
+</section>
+
+</main>
+
+<footer>
+ <p>کلاس ۷,۱</p>
+ <p class="small">
+ برخی اطلاعات از سایت های دیگر برداشته شده است</p>
+</footer>
+
+</body>
+</html>
